@@ -1,8 +1,7 @@
 {
   "name": "bitnovo-sdk",
   "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.4",
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
@@ -61,6 +60,7 @@
     "dist"
   ],
   "main": "./dist/my-lib.umd.js",
+  "browser": "./dist/my-lib.umd.js",
   "module": "./dist/my-lib.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
