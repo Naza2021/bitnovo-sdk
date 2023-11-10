@@ -1,7 +1,7 @@
 {
   "name": "bitnovo-sdk",
-  "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
-  "version": "0.1.4",
+  "description": "Bitnovo sdk, On-off-ramp integration",
+  "version": "0.1.8",
   "sideEffects": false,
   "scripts": {
     "dev": "vite",

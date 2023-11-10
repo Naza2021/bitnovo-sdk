@@ -16,7 +16,7 @@ pnpm i bitnovo-sdk
 yarn add bitnovo-sdk
 ```
 
-### Integracion React
+### React Integration
 
 ```javascript
 import { BitnovoRamp } from 'bitnovo-sdk'
@@ -41,7 +41,7 @@ const MyOwnBitnovoRamp: React.FC<MyOwnBitnovoRampProps> = ({ ...props }) => {
 
 ### Parametros de URL
 
-| Propiedad               | Descripción                                                                     | Ejemplo                                                                                                    |
+| Property               | Description                                                                     | Example                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `defaultCrypto`         | Default cryptocurrency to load the widget                                   | `"USDT_POLYGON,USDC_ETHEREUM"`                                                                             |
 | `excludeCryptos`        | 	Parameter to exclude specific cryptocurrencies                               | `"USDT_POLYGON,USDC_ETHEREUM"`                                                                             |
