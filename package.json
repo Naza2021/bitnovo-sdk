@@ -1,18 +1,19 @@
 {
   "name": "bitnovo-sdk",
   "description": "Bitnovo sdk, On-off-ramp integration",
-  "version": "0.1.8",
+  "version": "0.2.3",
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "ts-node-dev --transpile-only src/build.ts && vite build",
     "serve": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "build-v2": "microbundle-crl --no-compress --format modern,cjs",
-    "build-v3": "ts-node-dev --transpile-only src/build.ts && vite build"
+    "build-v3": "ts-node-dev --transpile-only src/lib/build.ts && vite build",
+    "publish-npm": "ts-node-dev --transpile-only src/lib/publish.ts && npm publish"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
@@ -42,19 +43,20 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.12.0",
     "happy-dom": "^9.18.3",
+    "lodash": "^4.17.21",
     "microbundle-crl": "^0.13.11",
     "postcss": "^8.4.23",
     "prettier": "2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4",
     "ui": "workspace:*",
     "vite": "^4.3.7",
     "vite-plugin-dts": "^2.3.0",
     "vite-tsconfig-paths": "^4.2.0",
-    "vitest": "^0.31.1",
-    "ts-node-dev": "^2.0.0"
+    "vitest": "^0.31.1"
   },
   "files": [
     "dist"
